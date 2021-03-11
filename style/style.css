@@ -1,0 +1,123 @@
+h1 {
+    color: firebrick;
+    text-align: center;
+    font-size: 350%;
+}
+
+#logo {
+    position: absolute;
+    
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: darkslategrey;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+
+form{
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 150px;
+    border: solid gray;
+}
+
+input[type=text], input[type=password]{
+    width: 80%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: indigo;
+    color: white;
+    margin: 8px ;
+    margin-left: 80px;
+    margin-right: 20px;
+    padding: 10px 14px;
+    width: 80%;
+    cursor: pointer;
+}
+
+#prof_img{
+    text-align: center;
+}
+
+input[type=checkbox]{
+    text-align: left;
+}
+
+label{
+    padding-left: 10px;
+    color: cornsilk;
+}
+
+body{
+    background-color:black;
+}
+
+input[type=search]{
+    margin-top: 180px;
+    margin-left: 10px;
+    width: 80%;
+    height: 50px;
+}
+
+#new_arrivals{
+    margin-top: 50px;
+    font-size: 200%;
+    color: darkred;
+}
+
+#user_img{
+    padding-top: 200px;
+    padding-left: 20px;
+}
+
+.info {
+    color: white;
+    padding-top: 200px;
+    padding-left: 300px;
+}
+
+.u_img{
+    position: absolute;
+    top: 230px;
+    padding-left: 20px;
+}
+
+.user_info{
+    position: absolute;
+}
+
+.topnav {
+    margin-top: 700px;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }

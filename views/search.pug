@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Movie Central - Search Movies
+    link(href="/style/search.css" rel="stylesheet" type="text/css")
+  body
+    #header
+      header
+        #logo
+          img(src="/style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    form(method="POST" action="/search")
+      label(for="searching") Search for a Movie
+      input(type="search" name="search" placeholder="Enter movie name or genre name here")
+      button(type="submit") Search
+    #new_arrivals
+      label#new_arrivals #{x.sentence}
+    each n in x
+      - var poster = n.Poster;
+      if poster == undefined
+        -continue;
+      a(href=`/api/movies/${n.Title}`)
+        img(src=poster)
+    footer
+      .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="./logout") Logout

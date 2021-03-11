@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title My Profile - Movie Central
+    link(href="style/style_2.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .user_info
+      .info
+        h5#name Username: #{x.username} 
+        <br>
+        h5#type  user type: #{x.userType}
+        <br>
+        h5#usersf Users you follow : 
+        each val, index in x.followingUsers
+          a(href=`/api/users/${val}`) #{val}  ,
+        <br>
+        h5#artistf Artists you follow : 
+        each val, index in x.followingPeople
+          a(href=`/api/people/${val}`) #{val}  ,
+      .u_img
+        img(src="style/prof_img.png" alt="image" width="40%")
+      .change_pwd
+        if x.userType == 'contributing'
+          form(method="GET" action="/addPerson")
+            button#change_ut Add a Person!
+      .change_un
+        if x.userType == 'contributing'
+          form(method="GET" action="/addMovie")
+            button#change_ut Add a movie
+      .upload_photo
+        label Change Profile Picture
+        input(type="file")
+      .change_ut
+        form(method="GET" action="/changetype")
+          button#change_ut Change User Types
+    footer
+      .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="./logout") Logout

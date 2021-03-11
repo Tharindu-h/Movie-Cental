@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Add movie - Movie Central
+    link(href="style/sign_up_style.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .form
+      form(action="/api/movies" method="POST")
+        .container
+          h2 Add a movie!
+          p Please fill this from to add a Movie!
+          hr
+          label(for="u_name")
+            b Movie name
+          input(type="text" placeholder="Enter movie name" name="Title" required="")
+          label(for="password")
+            b Release date
+          input(type="text" placeholder="Enter release date of movie" name="Released" required="")
+          label(for="u_name")
+            b Movie length
+          input(type="text" placeholder="Enter movie length in minutes" name="Runtime" required="")
+          label(for="password")
+            b Genre
+          input(type="text" placeholder="Enter the genres of the movie seperated by commas" name="Genre" required="")
+          label(for="password")
+            b Average rating
+          input(type="text" placeholder="Enter the average rating of the movie" name="aveRating" required="")
+          label(for="password")
+            b Plot
+          input(type="text" placeholder="Enter the plot of the movie" name="Plot" required="")
+          label(for="password")
+            b Actors
+          input(type="text" placeholder="Enter the actors of the movie seperated by commas" name="Actors" required="")
+          label(for="password")
+            b Writers
+          input(type="text" placeholder="Enter the writers of the movie seperated by commas" name="Writer" required="")
+          label(for="password")
+            b Directors
+          input(type="text" placeholder="Enter the directors of the movie seperated by commas" name="Director" required="")
+          label(for="password")
+            b Poster
+          input(type="text" placeholder="Enter the link to the a poster of the movie" name="Poster")
+          label(for="password")
+            b Reviews
+          input(type="text" placeholder="Enter review for the movie" name="reviews")
+          .sign_button
+            button(type="submit" name="sign_button") Submit
+  footer
+    .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="./logout") Logout

@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Movie Central - Sign up 
+    link(href="style/sign_up_style.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .form
+      form(action="/signup" method="POST")
+        .container
+          h2 Sign Up
+          p #{sentence.sentence}
+          hr
+          label(for="u_name")
+            b Username
+          input(type="text" placeholder="Enter Username" name="username" required="")
+          label(for="password")
+            b Password
+          input(type="text" placeholder="Enter Password" name="password" required="")
+          //
+            <label for="pwd_repeat"><b>Re-enter Password</b></label>
+            <input type="text" placeholder="Re-enter Password" name="pwd_repeat" required>
+          label
+            a(href="/") have an account? Login!
+          .sign_button
+            button(type="submit" name="sign_button") Sign Up

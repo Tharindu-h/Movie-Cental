@@ -1,0 +1,68 @@
+h1 {
+    color: firebrick;
+    text-align: center;
+    font-size: 350%;
+}
+
+#logo {
+    position: absolute;
+    
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: darkslategrey;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+body{
+    background-color:black;
+}
+
+.name{
+    padding-top: 100px;
+}
+.pic{
+    width: 35%;
+    float: left;
+    
+}
+
+h2{
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.info-child{
+    width: 65%;
+    float: right;
+}
+
+h3{
+    font-size: 50px;
+    color: whitesmoke;
+    margin: 0%;
+}
+
+#one{
+    color: rgb(180, 162, 58);
+}
+
+p{
+    color: whitesmoke;
+}
+
+.reviews{
+    text-align: center;
+    width: 100%;
+    padding-top: 550px;
+}
+
+.similar{
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+}

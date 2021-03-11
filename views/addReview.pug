@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Add review - Movie Central
+    link(href="/style/sign_up_style.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="/style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .form
+      form(action=`/api/addReview/${movie.title}` method="POST")
+        .container
+          h2 Review #{movie.title}!
+          p Add a review to #{movie.title}!
+          hr
+          label(for="password")
+            b Your review: 
+          input(type="text" placeholder="please write your review here" name="review" required="" )
+          label(for="password")
+          .sign_button
+            button(type="submit" name="sign_button") Submit
+  footer
+    .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="./logout") Logout

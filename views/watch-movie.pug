@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Movie Central - #{movie.Title}
+    link(href="style/style_watch_movie.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .info
+      .name
+        h2
+          b #{movie.Title}
+      .pic
+        - var poster = movie.Poster;
+        img(src=poster  alt="image" width="70%")
+      .info-child
+        if movie.userType == 'contributing'
+          form(action=`/api/editMovie/${movie.Title}` method="get")
+            button(type="/submit" name="sign_button") Edit
+          form(action=`/api/addReview/${movie.Title}` method="get")
+            button(type="submit" name="sign_button") Add review
+        h3 Overview
+        p#one
+          | #{movie.Plot}
+        p Release date: #{movie.Released}
+        p Genre: #{movie.Genre}
+        each val, index in movie.Genre
+          a(href=`/api/movies?genre=${val}`) #{val}  ,
+        p IMDB Rating: #{movie.imdbRating}
+        p Actors:
+        each val, index in movie.Actors
+          a(href=`/api/people/${val}`) #{val}  ,
+        p Directors: 
+        each val, index in movie.Director
+          a(href=`/api/people/${val}`) #{val}  ,
+        p Writers: 
+        each val, index in movie.Writer
+          a(href=`/api/people/${val}`) #{val}  ,
+    .reviews
+      h3 Reviews: 
+        hr
+        each n in movie.reviews
+          - var poster = n.username;
+          if poster == undefined
+            -continue;
+          a(href=`/api/users/${n.username}`)
+            p review by #{n.username}
+          p #{n.review}
+    .similar
+      h3 Similar Movies 
+        hr
+        each n in movie.similar
+          - var poster = n.Poster;
+          if poster == undefined
+            -continue;
+          a(href=`/api/movies/${n.Title}`)
+            img(src=poster)
+    footer
+      .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="/logout") Logout

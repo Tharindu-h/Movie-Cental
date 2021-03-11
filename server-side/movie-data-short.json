@@ -1,0 +1,302 @@
+
+    {
+       "Toy Story": {
+          "title": "Toy Story",
+          "released": "22 Nov 1995",
+          "runtime": "81 min",
+          "genre": [
+             "Animation",
+             "Adventure",
+             "Comedy",
+             "Family",
+             "Fantasy"
+          ],
+          "aveRating": "8.5",
+          "Plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
+          "Actors": [
+             "Tom Hanks",
+             " Tim Allen",
+             "Don Rickles",
+             " Jim Varney"
+          ],
+          "writers": [
+             "John Lasseter",
+             "Pete Docter",
+             "Andrew Stanton",
+             "Joe Ranft",
+             "Joss Whedon",
+             " Andrew Stanton",
+             "Joel Cohen",
+             "Alec Sokolow"
+          ],
+          "directors": [
+             "John Lasseter"
+          ],
+          "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
+          "poster": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg",
+          "reviews": [
+             1
+          ]
+       },
+       "Jumanji": {
+          "title": "Jumanji",
+          "released": "15 Dec 1995",
+          "runtime": "104 min",
+          "genre": [
+             "Adventure",
+             "Comedy",
+             "Family",
+             "Fantasy"
+          ],
+          "aveRating": null,
+          "Plot": "When two kids find and play a magical board game, they release a man trapped in it for decades - and a host of dangers that can only be stopped by finishing the game.",
+          "Actors": [
+             "Robin Williams",
+             "Jonathan Hyde",
+             "Kirsten Dunst",
+             "Bradley Pierce"
+          ],
+          "writers": [
+             "Jonathan Hensleigh",
+             "Greg Taylor",
+             "Jim Strain",
+             "Greg Taylor",
+             "Jim Strain",
+             "Chris Van Allsburg",
+             "Chris Van Allsburg"
+          ],
+          "directors": [
+             "Joe Johnston"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BZTk2ZmUwYmEtNTcwZS00YmMyLWFkYjMtNTRmZDA3YWExMjc2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+          "reviews": []
+       },
+       "Grumpier Old Men": {
+          "title": "Grumpier Old Men",
+          "released": "22 Dec 1995",
+          "runtime": "101 min",
+          "genre": [
+             "Comedy",
+             "Romance"
+          ],
+          "aveRating": null,
+          "Plot": "John and Max resolve to save their beloved bait shop from turning into an Italian restaurant, just as its new female owner catches Max's attention.",
+          "Actors": [
+             "Walter Matthau",
+             "Jack Lemmon",
+             "Sophia Loren",
+             "Ann-Margret"
+          ],
+          "writers": [
+             "Mark Steven Johnson"
+          ],
+          "directors": [
+             "Howard Deutch"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BMjQxM2YyNjMtZjUxYy00OGYyLTg0MmQtNGE2YzNjYmUyZTY1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+          "reviews": []
+       },
+       "Waiting to Exhale": {
+          "title": "Waiting to Exhale",
+          "released": "22 Dec 1995",
+          "runtime": "124 min",
+          "genre": [
+             "Comedy",
+             "Drama",
+             "Romance"
+          ],
+          "aveRating": null,
+          "Plot": "Based on Terry McMillan's novel, this film follows four very different African-American women and their relationships with the male gender.",
+          "Actors": [
+             "Whitney Houston",
+             "Angela Bassett",
+             "Loretta Devine",
+             "Lela Rochon"
+          ],
+          "writers": [
+             "Terry McMillan",
+             "Terry McMillan",
+             " Ronald Bass"
+          ],
+          "directors": [
+             "Forest Whitaker"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BYzcyMDY2YWQtYWJhYy00OGQ2LTk4NzktYWJkNDYwZWJmY2RjXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg",
+          "reviews": []
+       },
+       "Father of the Bride Part II": {
+          "title": "Father of the Bride Part II",
+          "released": "08 Dec 1995",
+          "runtime": "106 min",
+          "genre": [
+             "Comedy",
+             "Family",
+             "Romance"
+          ],
+          "aveRating": null,
+          "Plot": "George Banks must deal not only with the pregnancy of his daughter, but also with the unexpected pregnancy of his wife.",
+          "Actors": [
+             "Steve Martin",
+             "Diane Keaton",
+             "Martin Short",
+             "Kimberly Williams-Paisley"
+          ],
+          "writers": [
+             "Albert Hackett",
+             "Frances Goodrich",
+             "Nancy Meyers",
+             "Charles Shyer"
+          ],
+          "directors": [
+             "Charles Shyer"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BOTEyNzg5NjYtNDU4OS00MWYxLWJhMTItYWU4NTkyNDBmM2Y0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+          "reviews": []
+       },
+       "Heat": {
+          "title": "Heat",
+          "released": "15 Dec 1995",
+          "runtime": "170 min",
+          "genre": [
+             "Crime",
+             "Drama",
+             "Thriller"
+          ],
+          "aveRating": null,
+          "Plot": "A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist.",
+          "Actors": [
+             "Al Pacino",
+             "Robert De Niro",
+             "Val Kilmer",
+             "Jon Voight"
+          ],
+          "writers": [
+             "Michael Mann"
+          ],
+          "directors": [
+             "Michael Mann"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BMDJjNWE5MTEtMDk2Mi00ZjczLWIwYjAtNzM2ZTdhNzcwOGZjXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg",
+          "reviews": []
+       },
+       "Sabrina": {
+          "title": "Sabrina",
+          "released": "15 Dec 1995",
+          "runtime": "127 min",
+          "genre": [
+             "Comedy",
+             "Drama",
+             "Romance"
+          ],
+          "aveRating": null,
+          "Plot": "An ugly duckling having undergone a remarkable change, still harbors feelings for her crush: a carefree playboy, but not before his business-focused brother has something to say about it.",
+          "Actors": [
+             "Harrison Ford",
+             "Julia Ormond",
+             "Greg Kinnear",
+             "Nancy Marchand"
+          ],
+          "writers": [
+             "Samuel A. Taylor",
+             "Billy Wilder",
+             "Samuel A. Taylor",
+             "Ernest Lehman",
+             "Barbara Benedek",
+             "David Rayfiel"
+          ],
+          "directors": [
+             "Sydney Pollack"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BYjQ5ZjQ0YzQtOGY3My00MWVhLTgzNWItOTYwMTE5N2ZiMDUyXkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_SX300.jpg",
+          "reviews": []
+       },
+       "Tom and Huck": {
+          "title": "Tom and Huck",
+          "released": "22 Dec 1995",
+          "runtime": "97 min",
+          "genre": [
+             "Adventure",
+             "Comedy",
+             "Drama",
+             "Family",
+             "Romance",
+             "Western"
+          ],
+          "aveRating": null,
+          "Plot": "Two best friends witness a murder and embark on a series of adventures in order to prove the innocence of the man wrongly accused of the crime.",
+          "Actors": [
+             "Jonathan Taylor Thomas",
+             "Brad Renfro",
+             "Eric Schweig",
+             "Charles Rocket"
+          ],
+          "writers": [
+             "Mark Twain",
+             "Stephen Sommers",
+             "David Loughery"
+          ],
+          "directors": [
+             "Peter Hewitt"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BN2ZkZTMxOTAtMzg1Mi00M2U0LWE2NWItZDg4YmQyZjVkMDdhXkEyXkFqcGdeQXVyNTM5NzI0NDY@._V1_SX300.jpg",
+          "reviews": []
+       },
+       "Sudden Death": {
+          "title": "Sudden Death",
+          "released": "22 Dec 1995",
+          "runtime": "111 min",
+          "genre": [
+             "Action",
+             "Crime",
+             "Thriller"
+          ],
+          "aveRating": null,
+          "Plot": "A former fireman takes on a group of terrorists holding the Vice President and others hostage during the seventh game of the NHL Stanley Cup finals.",
+          "Actors": [
+             "Jean-Claude Van Damme",
+             "Powers Boothe",
+             "Raymond J. Barry",
+             "Whittni Wright"
+          ],
+          "writers": [
+             "Karen Elise Baldwin",
+             "Gene Quintano"
+          ],
+          "directors": [
+             "Peter Hyams"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BN2NjYWE5NjMtODlmZC00MjJhLWFkZTktYTJlZTI4YjVkMGNmXkEyXkFqcGdeQXVyNDc2NjEyMw@@._V1_SX300.jpg",
+          "reviews": []
+       },
+       "GoldenEye": {
+          "title": "GoldenEye",
+          "released": "17 Nov 1995",
+          "runtime": "130 min",
+          "genre": [
+             "Action",
+             "Adventure",
+             "Thriller"
+          ],
+          "aveRating": null,
+          "Plot": "Years after a friend and fellow 00 agent is killed on a joint mission, a secret space based weapons program known as \"GoldenEye\" is stolen. James Bond sets out to stop a Russian crime syndicate from using the weapon.",
+          "Actors": [
+             "Pierce Brosnan",
+             "Sean Bean",
+             "Izabella Scorupco",
+             "Famke Janssen"
+          ],
+          "writers": [
+             "Ian Fleming",
+             "Michael France",
+             "Jeffrey Caine",
+             "Bruce Feirstein"
+          ],
+          "directors": [
+             "Martin Campbell"
+          ],
+          "poster": "https://m.media-amazon.com/images/M/MV5BMzk2OTg4MTk1NF5BMl5BanBnXkFtZTcwNjExNTgzNA@@._V1_SX300.jpg",
+          "reviews": []
+       }
+   }
+
+ 

@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Movie Central - Search People
+    link(href="/style/search.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="/style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    form(method="POST" action="/searchPerson")
+      label(for="searching") Search for a Person
+      input(type="search" name="search" placeholder="Enter actor/director or writer's name here")
+      button(type="submit") Search
+    #new_arrivals
+      label#new_arrivals #{x.sentence}
+    each n in x
+      if x.sentence == 'Search for people'
+        -continue;
+      if x.sentence == 'cannot find what you searched for'
+        -continue;
+      - var poster = '../style/prof_img.png';
+      a(href=`/api/people/${n.name}`)
+        img(src=poster style='width:200px;')
+        p #{n.name}
+    footer
+      .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="./logout") Logout

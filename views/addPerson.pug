@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Add person - Movie Central
+    link(href="style/sign_up_style.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .form
+      form(action="/api/people" method="POST")
+        .container
+          h2 Add a Person!
+          p Please fill this from to add a Person!
+          hr
+          label(for="u_name")
+            b Person's name
+          input(type="text" placeholder="Enter person's name" name="name" required="")
+          label(for="password")
+            b Actor
+          input(type="text" placeholder="Enter 'true' if this person is an actor otherwise enter 'false'" name="actor" required="")
+          label(for="u_name")
+            b Director
+          input(type="text" placeholder="Enter 'true' if this person is an director otherwise enter 'false'" name="director" required="")
+          label(for="password")
+            b Writer
+          input(type="text" placeholder="Enter 'true' if this person is an writer otherwise enter 'false'" name="writer" required="")
+          label(for="password")
+            b Work
+          input(type="text" placeholder="Enter the movies this person was involved in seperated by commas" name="work" required="")
+          button(type="submit" name="sign_button") Submit
+  footer
+      .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="/logout") Logout

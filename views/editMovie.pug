@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Edit movie - Movie Central
+    link(href="/style/sign_up_style.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="/style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .form
+      form(action=`/api/editMovie/${movie.Title}` method="POST")
+        .container
+          h2 Edit #{movie.Title}!
+          p Please fill this from to edit #{movie.Title}!
+          hr
+          label(for="password")
+            b Actors
+          input(type="text" placeholder="Enter the actors of the movie seperated by commas" name="Actors" required="" value=`${movie.Actors}`)
+          label(for="password")
+            b Writers
+          input(type="text" placeholder="Enter the writers of the movie seperated by commas" name="Writer" required="" value=`${movie.Writer}` )
+          label(for="password")
+            b Directors
+          input(type="text" placeholder="Enter the directors of the movie seperated by commas" name="Director" required="" value=`${movie.Director}`)
+          label(for="password")
+          .sign_button
+            button(type="submit" name="sign_button") Submit
+  footer
+    .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="./logout") Logout

@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Movie Central - My Profile
+    link(href="style/style_2.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .user_info
+      .info
+        h5#name Username: #{x.username} 
+        <br>
+        h5#type  user type: #{x.userType}
+        <br>
+        h5#usersf Users followed by #{x.username} : #{x.followingUsers}
+        <br>
+        h5#artistf Artists followed by #{x.username} : #{x.followingPeople}
+      .u_img
+        img(src="style/prof_img.png" alt="image" width="40%")
+    footer
+      .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="/logout") Logout

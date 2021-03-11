@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(href="style/style.css" rel="stylesheet")
+    title Movie Central - Login
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    form(method="POST" action="/login")
+      #prof_img
+        img(src="style/prof_img.png" alt="image" width="50%")
+      #container
+        label(for="user_name")
+          b Username
+        input(type="text" placeholder="Enter Username" name="username" required="")
+        label(for="password")
+          b Password
+        input(type="text" placeholder="Enter Password" name="password" required="")
+        button(type="submit") Login
+      a(href="/signup") Dont Have An Account Yet? Sign UP!
+    footer

@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Movie Central - #{person.name}
+    link(href="style/view_person_style.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 Movie Central
+    .info
+      .name
+        h2 #{person.name}
+        form(method="GET" action="/followPerson")
+          button #{person.followOrNot}
+      .pic
+        img(src="style/prof_img.png" alt="image" width="70%")
+      .info_child
+        p Name: #{person.name}
+        p Movies involved in: 
+        if person.work.length > 1
+          each val, index in person.work
+            a(href=`/api/movies/${val}`) #{val}  ,
+        else
+          a(href=`/api/movies/${person.work}`) #{person.work}
+        br
+        br
+        br
+        p Frequent Collaborators: 
+        each val, index in person.FrequentCollaborators
+          a(href=`/api/people/${val}`) #{val}  ,
+    footer
+      .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="/logout") Logout

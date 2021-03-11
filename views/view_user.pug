@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Movie Central - #{x.username} 
+    link(href="style/view_person_style.css" rel="stylesheet")
+  body
+    #header
+      header
+        #logo
+          img(src="style/popcorn-movie-time-512.png" alt="image" width="160px")
+        #title
+          h1 The Movie Base
+    .info
+      .name
+        h2 #{x.username} 
+        form(method="GET" action="/followUser")
+          button #{x.followOrNot}
+      .pic
+        img(src="style/prof_img.png" alt="image" width="70%")
+      .info_child
+        p Username: #{x.username}  
+        p user type: #{x.userType}
+        p  Users followed by #{x.username} : 
+        each val, index in x.followingUsers
+          a(href=`/api/users/${val}`) #{val}  , 
+        p Artists followed by #{x.username} : 
+        each val, index in x.followingPeople
+          a(href=`/api/people/${val}`) #{val}  , 
+        p Reviews written: 
+    footer
+      .topnav
+        a.active(href="/my_profile") Home
+        a(href="/search") Search Movie
+        a(href="/searchUser") Search User
+        a(href="/searchPerson") Search Person
+        a(href="/logout") Logout
